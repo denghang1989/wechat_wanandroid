@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/system/system",
+    "pages/me/me",
+    "pages/wechat/wechat",
+    "pages/project/project"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#01D2FB",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "img/ic_main_home.png",
+        "selectedIconPath": "img/ic_main_home_check.png"
+      },
+      {
+        "pagePath": "pages/system/system",
+        "text": "知识",
+        "iconPath": "img/ic_main_system.png",
+        "selectedIconPath": "img/ic_main_system_check.png"
+      },
+      {
+        "pagePath": "pages/wechat/wechat",
+        "text": "公众",
+        "iconPath": "img/ic_main_wx.png",
+        "selectedIconPath": "img/ic_main_wx_check.png"
+      },
+      {
+        "pagePath": "pages/project/project",
+        "text": "项目",
+        "iconPath": "img/ic_main_project.png",
+        "selectedIconPath": "img/ic_main_project_check.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "img/ic_main_person.png",
+        "selectedIconPath": "img/ic_main_person_check.png"
+      }
+    ]
+  }
+}

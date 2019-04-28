@@ -1,0 +1,14 @@
+<view class="home" hover-class="none" hover-stop-propagation="false">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+            <swiper-item>
+                <image src="{{item.imagePath}}" class="slide-image" />
+            </swiper-item>
+        </block>
+    </swiper>
+    
+    <view class="home-content" hover-class="none" hover-stop-propagation="false">
+        
+    </view>
+
+</view>
