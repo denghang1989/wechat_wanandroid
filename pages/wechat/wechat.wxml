@@ -1,2 +1,5 @@
 <!--pages/wechat/wechat.wxml-->
-<text>pages/wechat/wechat.wxml</text>
+<view class="wechat" hover-class="none" hover-stop-propagation="false">
+    
+    
+</view>

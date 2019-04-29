@@ -1,10 +1,15 @@
 /* pages/system/system.wxss */
 
+@import "../../font-awesome.wxss";
 
-.system{
+.system-container{
     display: flex;
     flex-direction: row;
     flex-flow: nowrap;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .system-left-main{
@@ -12,15 +17,23 @@
     flex-direction: row;
     flex-flow: wrap;
     justify-content: flex-start;
-    flex: 0 0 1
+    margin-top: 5px;
 }
 
 .system-bridge{
     padding-right: 5px;
-    color: #ddd;
+    color: #666;
     font-size: 12px;
+}
+
+.system-left{
+    flex: 0 0 8
 }
 
 .system-right{
     flex: 0 0 1
+}
+
+.system-left-header{
+    color: #000;
 }

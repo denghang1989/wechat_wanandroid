@@ -1,14 +1,19 @@
 <!-- pages/system/system.wxml -->
 <view class="system" hover-class="none" hover-stop-propagation="false">
     <block wx:for="{{systemList}}" wx:for-index="index" wx:for-item="item" wx:key="index">
-        <view class="system-left" hover-class="none" hover-stop-propagation="false">
-            <text class="system-left-header">{{item.name}}</text>
-            <view class="system-left-main" hover-class="none" hover-stop-propagation="false">
-                <span wx:for="{{item.children}}" wx:for-index="subIndex" wx:for-item="subItem" wx:key="subIndex" class="system-bridge">
-                    {{subItem.name}}
-                </span>
+        <view class="system-container" hover-class="none" hover-stop-propagation="false">
+            <view class="system-left" hover-class="none" hover-stop-propagation="false">
+                <text class="system-left-header">{{item.name}}</text>
+                <view class="system-left-main" hover-class="none" hover-stop-propagation="false">
+                    <span wx:for="{{item.children}}" wx:for-index="subIndex" wx:for-item="subItem" wx:key="subIndex" class="system-bridge">
+                        {{subItem.name}}
+                    </span>
+                </view>
+            </view>
+            <view class="system-right" hover-class="none" hover-stop-propagation="false">
+                <icon class="fa fa-angle-right"  size="23" >
+                </icon>
             </view>
         </view>
-        <view class="system-right" hover-class="none" hover-stop-propagation="false"></view>
     </block>
 </view>
