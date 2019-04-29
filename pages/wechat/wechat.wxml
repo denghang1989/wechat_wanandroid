@@ -1,5 +1,6 @@
-<!--pages/wechat/wechat.wxml-->
+<!-- pages/wechat/wechat.wxml -->
 <view class="wechat" hover-class="none" hover-stop-propagation="false">
-    
-    
+    <i-tabs current="{{current}}" scroll>
+        <i-tab class="wechat-tab" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="item" wx:key="id" key="{{item.id}}" title="{{item.name}}"></i-tab>
+    </i-tabs>
 </view>
