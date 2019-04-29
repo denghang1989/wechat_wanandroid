@@ -1,5 +1,8 @@
 /* pages/home/home.wxss */
 
+@import "../../template/detail/detail.wxss";
+@import "../../font-awesome.wxss";
+
 .slide-image{
     width: 100%;
     height: 100%;

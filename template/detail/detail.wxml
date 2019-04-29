@@ -1,0 +1,17 @@
+<template name="detail">
+    <view class="detail-container" hover-class="none" hover-stop-propagation="false">
+        <view class="detail-header" hover-class="none" hover-stop-propagation="false">
+            <text decode="{{true}}">{{item.author}}</text>
+            <text decode="{{true}}">{{item.niceDate}}</text>
+        </view>
+        <view class="detail-main" hover-class="none" hover-stop-propagation="false">
+            <text decode="{{true}}">{{item.title}}</text>
+        </view>
+        <view class="detail-footer" hover-class="none" hover-stop-propagation="false">
+            <text selectable="false" space="false" decode="false">
+                {{item.superChapterName}}/{{item.chapterName}}
+            </text>
+            <icon class="fa fa-heart-o" ></icon>
+        </view>
+    </view>
+</template>

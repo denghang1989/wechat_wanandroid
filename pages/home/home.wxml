@@ -1,3 +1,5 @@
+<import src="../../template/detail/detail.wxml"></import>
+
 <view class="home" hover-class="none" hover-stop-propagation="false">
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
         <block wx:for="{{imgUrls}}" wx:for-item="item" wx:for-index="index" wx:key="index">
@@ -8,7 +10,9 @@
     </swiper>
     
     <view class="home-content" hover-class="none" hover-stop-propagation="false">
-        
+        <block wx:for="{{itemList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+            <template is="detail" data="{{item}}"></template>
+        </block>
     </view>
 
 </view>

@@ -1,0 +1,29 @@
+.detail-container{
+    padding: 5px 10px;
+    border-bottom: 1px solid #dddddd
+}
+
+.detail-header,.detail-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.detail-main{
+    padding-top: 10px;
+}
+
+.detail-main>text{
+    color: black;
+    font-size: 16px;
+}
+
+.detail-header,.detail-footer{
+     color: #333333;
+     font-size: 12px;
+}
+
+.detail-footer icon{
+    font-size: 18px;
+}
