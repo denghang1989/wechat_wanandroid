@@ -1,18 +1,21 @@
 // pages/system/system.js
+var appInst = getApp();
+var baseUrl = appInst.globalData.baseUrl;
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    systemList: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getSystemList();
   },
 
   /**
@@ -62,5 +65,18 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  getSystemList: function () {
+    wx.request({
+      url: baseUrl + '/tree/json',
+      method: 'GET',
+      success: (result) => {
+        let list = result.data.data;
+        this.setData({
+          systemList: list
+        })
+      }
+    });
   }
 })

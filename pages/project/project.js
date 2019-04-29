@@ -1,11 +1,17 @@
 // pages/project/project.js
+
+var appInst =  getApp();
+var baseUrl =  appInst.globalData.baseUrl;
+
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    systemList:[],
+    number:0
   },
 
   /**

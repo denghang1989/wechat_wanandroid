@@ -1,1 +1,26 @@
 /* pages/system/system.wxss */
+
+
+.system{
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+}
+
+.system-left-main{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    flex: 0 0 1
+}
+
+.system-bridge{
+    padding-right: 5px;
+    color: #ddd;
+    font-size: 12px;
+}
+
+.system-right{
+    flex: 0 0 1
+}
