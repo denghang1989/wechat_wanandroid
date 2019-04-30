@@ -1,6 +1,14 @@
 <!-- pages/wechat/wechat.wxml -->
+<import src="../../template/detail/detail.wxml"></import>
+
 <view class="wechat" hover-class="none" hover-stop-propagation="false">
-    <i-tabs current="{{current}}" scroll>
-        <i-tab class="wechat-tab" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="item" wx:key="id" key="{{item.id}}" title="{{item.name}}"></i-tab>
+    <i-tabs current="{{current}}" scroll bindchange="handleChange" color="#01D2FB">
+        <i-tab class="wechat-tab" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="item" wx:key="id" key="{{item.id}}" title="{{item.name}}"  ></i-tab>
     </i-tabs>
+
+    <view class="wechat-content" hover-class="none" hover-stop-propagation="false">
+         <block wx:for="{{itemList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+            <template is="detail" data="{{item}}"></template>
+        </block>
+    </view>
 </view>

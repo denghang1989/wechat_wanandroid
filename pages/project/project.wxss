@@ -1,1 +1,47 @@
 /* pages/project/project.wxss */
+
+@import "../../font-awesome.wxss";
+
+.project-item{
+    border-bottom: 1px solid #ddd;
+    padding: 2px 10px;
+    margin: 0
+}
+
+.item-footer{
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.project-item-left{
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    margin-top: 10px;
+}
+
+.image-left{
+    flex: 0 0 1;
+    width: 300px;
+}
+
+.image-right{
+    flex: 0 0 1;
+    padding-left: 4px;
+}
+
+.project-item-title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.icon-span{
+    padding: 0px 2px;
+}

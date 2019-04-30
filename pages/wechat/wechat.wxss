@@ -1,1 +1,3 @@
 /* pages/wechat/wechat.wxss */
+@import "../../template/detail/detail.wxss";
+@import "../../font-awesome.wxss";

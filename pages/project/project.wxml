@@ -1,2 +1,28 @@
-<!--pages/project/project.wxml-->
-<text>{{number}}</text>
+<!-- pages/project/project.wxml -->
+<view class="project" hover-class="none" hover-stop-propagation="false">
+    <i-tabs current="{{current}}" scroll bindchange="handleChange" color="#01D2FB">
+        <i-tab class="wechat-tab" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="item" wx:key="id" key="{{item.id}}" title="{{item.name}}"></i-tab>
+    </i-tabs>
+    <view class="project-content" hover-class="none" hover-stop-propagation="false">
+        <view wx:for="{{itemList}}" wx:for-index="index" wx:for-item="item" wx:key="index" class="project-item" hover-class="none" hover-stop-propagation="false">
+            <text class="project-item-title" selectable="false" space="false" decode="false">
+                {{item.title}}
+            </text>
+            <view class="project-item-left" hover-class="none" hover-stop-propagation="false">
+                <image class="image-left" src="{{item.envelopePic}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+                </image>
+                <text class="image-right" selectable="false" space="false" decode="false">
+                    {{item.simpleDesc}}
+                </text>
+            </view>
+            <view class="item-footer" hover-class="none" hover-stop-propagation="false">
+                <view class="item-footer-left" hover-class="none" hover-stop-propagation="false">
+                    <span>{{item.author}}</span>
+                    <span class="icon-span">/</span>
+                    <span>{{item.niceDate}}</span>
+                </view>
+                <i class="fa fa-heart-o"></i>
+            </view>
+        </view>
+    </view>
+</view>
